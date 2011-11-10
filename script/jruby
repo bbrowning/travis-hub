@@ -20,13 +20,13 @@ fi
 # Add JRuby to the path
 export PATH=${APPDIR}/jruby-${JRUBY_VERSION}/bin:$PATH
 
-# Install Bundler if needed
-if ! jruby -S gem list | grep bundler > /dev/null; then
-  jruby -S gem install bundler --pre --no-ri --no-rdoc --install-dir .gems
-fi
+# # Install Bundler if needed
+# if ! jruby -S gem list | grep bundler > /dev/null; then
+#   jruby -S gem install bundler --pre --no-ri --no-rdoc --install-dir .gems
+# fi
 
-# Install gems
-bundle install --gemfile=Jemfile
+# # Install gems
+# bundle install --gemfile=Jemfile
 
 max_mem=500m
 max_stack=2048k
