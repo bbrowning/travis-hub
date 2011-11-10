@@ -8,6 +8,7 @@ export GEM_HOME=$APPDIR/vendor/bundle
 export GEM_PATH=$APPDIR/.gems:$APPDIR/vendor/bundle
 export PATH=$APPDIR/.gems/bin:$APPDIR/vendor/bundle/bin:$PATH
 export BUNDLE_GEMFILE=$APPDIR/Jemfile
+unset GIT_DIR
 #export JRUBY_OPTS=--1.9
 
 # Download a JRuby if needed
@@ -27,8 +28,6 @@ export PATH=${APPDIR}/jruby-${JRUBY_VERSION}/bin:$PATH
 
 # # Install gems
 # bundle install --gemfile=Jemfile
-
-env
 
 max_mem=500m
 max_stack=2048k
