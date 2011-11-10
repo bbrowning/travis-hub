@@ -28,6 +28,8 @@ export PATH=${APPDIR}/jruby-${JRUBY_VERSION}/bin:$PATH
 # # Install gems
 # bundle install --gemfile=Jemfile
 
+env
+
 max_mem=500m
 max_stack=2048k
 
