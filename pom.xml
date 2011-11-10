@@ -27,7 +27,7 @@
                         </goals>
                         <configuration>
                             <executable>script/jruby</executable>
-                            <commandlineArgs>-S gem install bundler --pre --no-ri --no-rdoc --install-dir .gems</commandlineArguments>
+                            <commandlineArgs>-S gem install bundler --pre --no-ri --no-rdoc --install-dir .gems</commandlineArgs>
                         </configuration>
                     </execution>
                     <execution>
@@ -38,7 +38,7 @@
                         </goals>
                         <configuration>
                             <executable>script/jruby</executable>
-                            <commandlineArgs>-S bundle install --gemfile=Jemfile</commandlineArguments>
+                            <commandlineArgs>-S bundle install --gemfile=Jemfile</commandlineArgs>
                         </configuration>
                     </execution>
                 </executions>
